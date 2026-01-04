@@ -118,6 +118,7 @@ jobs:
       - name: 🔨 构建 OrangeFox
         run: |
           cd ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ inputs.MANIFEST_BRANCH }}
+          set +e
 
           export OF_MAINTAINER=${{ inputs.OF_MAINTAINER }}
           export ALLOW_MISSING_DEPENDENCIES=true
