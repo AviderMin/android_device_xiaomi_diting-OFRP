@@ -136,7 +136,7 @@ jobs:
 
       - name: 🏷️ 设置发布属性
         run: |
-          echo "BUILD_DATE=$(TZ=Asia/Manila date +%Y%m%d)" >> $GITHUB_ENV
+          echo "BUILD_DATE=$(TZ=Asia/Shanghai date +%Y%m%d)" >> $GITHUB_ENV
 
       - name: 📦 处理输出文件
         run: |
