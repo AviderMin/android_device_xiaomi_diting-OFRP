@@ -50,6 +50,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_ALLOW_EARLY_SETTINGS_LOAD=1
 	export FOX_MISCELLANEOUS_ROOT_DIRECTORY="/sdcard"
 
+	# Move the Magisk installer/uninstaller ZIP to the ramdisk
+	export FOX_MOVE_MAGISK_INSTALLER_TO_RAMDISK=1
+	
+    #KernelSU
+	export FOX_ENABLE_KERNELSU_SUPPORT=1
+
 	#OFR binary files
 	export FOX_REPLACE_BUSYBOX_PS=1
 	export FOX_USE_BASH_SHELL=1
@@ -59,9 +65,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_XZ_UTILS=1
 	export FOX_USE_SED_BINARY=1
 	export FOX_USE_NANO_EDITOR=1
-	
-    #KernelSU
-	export FOX_ENABLE_KERNELSU_SUPPORT=1
 
 	#OTA
 	export FOX_VIRTUAL_AB_DEVICE=1
