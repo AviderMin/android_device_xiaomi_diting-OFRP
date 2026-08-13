@@ -163,7 +163,7 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libnetutils.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so
-TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko fts_touch_spi.ko nt36xxx-spi.ko"
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko fts_touch_spi.ko atmel_mxt_ts.ko focaltech_fts.ko goodix_core.ko goodix_fod.ko goodix_health.ko nt36xxx-i2c.ko nt36xxx-spi.ko synaptics_dsx.ko panel_event_notifier.ko i2c-msm-geni.ko spi-msm-geni.ko"
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 
 # TWRP Debug Flags
